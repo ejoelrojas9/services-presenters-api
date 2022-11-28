@@ -22,7 +22,8 @@ class Api::V1::CustomersController < ApplicationController
   end
 
   def destroy
-    
+    response = Api::V1::Customers::Destroy.call(params[:id])
+    render json: {success: response[:success], data: response[:data]}, status: response[:status]
   end
 
   private
