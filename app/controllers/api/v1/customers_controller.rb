@@ -2,7 +2,8 @@ class Api::V1::CustomersController < ApplicationController
   before_action :set_customer, only: %i[ show update destroy]
 
   def index
-    response = Api::V1::Customers::Search.call(params)
+    response = Api::V1::CustomersMongo::Search.call(params)
+    # response = Api::V1::Customers::Search.call(params)
     render json: {success: response[:success], data: response[:data]}, status: response[:status]
   end
 
