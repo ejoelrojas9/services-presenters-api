@@ -1,15 +1,25 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  company_name: MyString
-  first_name: MyString
-  last_name: MyString
-  active: false
-  address: MyText
+  company_name: Central City Police
+  first_name: Barry
+  last_name: Allen
+  active: true
+  api_key: 99hbgq33fe
+  address: 208 N 1st St, Central City, KY 42330
 
 two:
-  company_name: MyString
-  first_name: MyString
-  last_name: MyString
+  company_name: Wayne Enterprises
+  first_name: Bruce
+  last_name: Wayne
   active: false
-  address: MyText
+  api_key: 99hbgq33ff
+  address: 123 Main St
+
+three:
+  company_name: Daily Planet
+  first_name: Clark
+  last_name: Kent
+  active: true
+  api_key: 99hbgq33fa
+  address: 330 Sixth Street
