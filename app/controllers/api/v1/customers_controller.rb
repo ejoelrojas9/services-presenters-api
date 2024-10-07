@@ -1,6 +1,6 @@
-class Api::V1::CustomersController < Api::V1::BaseController
-  # before_action :authenticate_admin!
-  before_action :check_session
+class Api::V1::CustomersController < ApplicationController
+  before_action :validate_api_key, only: [:show]
+  before_action :authenticate_admin!, except: [:show]
   before_action :set_customer, only: %i[ show update destroy]
 
   def index

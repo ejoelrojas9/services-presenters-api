@@ -99,6 +99,8 @@ GEM
       concurrent-ruby (~> 1.0)
       zeitwerk (~> 2.6)
     erubi (1.11.0)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -197,6 +199,7 @@ DEPENDENCIES
   devise
   devise-jwt
   dotenv-rails
+  faker
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors

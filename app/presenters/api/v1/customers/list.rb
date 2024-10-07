@@ -6,6 +6,7 @@ class Api::V1::Customers::List
       company_name: customer.company_name,
       # first_name: customer.first_name,
       name: customer.name,
+      api_key: customer.api_key
       # last_name: customer.last_name,
       # active: customer.active,
       # address: customer.address   
